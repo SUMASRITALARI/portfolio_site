@@ -1,53 +1,123 @@
+/* General */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #fff7fa;
-    color: #444;
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffeef6;
+  color: #4a2e2a;
+  text-align: center;
 }
 
+/* Header */
 header {
-    background: linear-gradient(120deg, #ffd6e8, #ffe6f2);
-    padding: 2rem;
-    border-bottom: 2px solid #ffb6c1;
+  background: #ffc8dd;
+  padding: 40px 20px;
+  border-bottom: 2px solid #f4a6b8;
 }
 
-h1, h2 {
-    color: #ff69b4;
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  color: #d63384;
 }
 
-.gallery {
-    padding: 2rem;
+header p {
+  font-size: 1rem;
+  color: #5e3c4c;
 }
 
-.image-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+/* Section Styling */
+.section {
+  padding: 60px 20px;
+  margin: 30px auto;
+  max-width: 900px;
+  background: #fff0f5;
+  border-radius: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
 }
 
-.image-grid img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+.section h2 {
+  font-family: 'Pacifico', cursive;
+  color: #ff5d8f;
+  font-size: 2rem;
+  margin-bottom: 25px;
 }
 
-.image-grid img:hover {
-    transform: scale(1.05);
+/* Favorites Section */
+.fav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
 }
 
-.about {
-    background-color: #ffeef8;
-    padding: 2rem;
-    border-top: 2px dashed #ffb6c1;
+.fav-card {
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 200px;
+  transition: transform 0.3s ease;
+  padding: 10px;
 }
 
+.fav-card:hover {
+  transform: scale(1.05);
+}
+
+.fav-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.fav-card p {
+  font-family: 'Pacifico', cursive;
+  color: #8b5e83;
+  margin-top: 8px;
+}
+
+/* About Section */
+.about p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #5b3a4c;
+}
+
+/* Spotify Player */
+.music-player {
+  background: linear-gradient(135deg, #FCEED4, #E1D5C9);
+  border-radius: 40px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.music-player:hover {
+  transform: scale(1.02);
+}
+
+.music-player h2 {
+  color: #8B6B4F;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 25px;
+}
+
+.music-card {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #FFF9F4;
+  border-radius: 25px;
+  padding: 15px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Footer */
 footer {
-    padding: 1rem;
-    background: #ffd6e8;
-    font-size: 0.9rem;
+  background: #ffc8dd;
+  padding: 20px;
+  font-size: 1rem;
+  color: #4a2e2a;
+  border-top: 2px solid #f4a6b8;
 }
+
