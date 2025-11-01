@@ -132,3 +132,14 @@ footer a {
   text-decoration: none;
 }
 
+@keyframes shimmer {
+  0% { box-shadow: 0 0 15px #b8f7d4; }
+  50% { box-shadow: 0 0 35px #82ffcb; }
+  100% { box-shadow: 0 0 15px #b8f7d4; }
+}
+
+.shimmer {
+  animation: shimmer 2s infinite;
+}
+
+
