@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suma’s Cozy Portal 🌼</title>
+  <style>
+    body {
+      background-color: #eafbee;
+      font-family: 'Comic Neue', cursive;
+      text-align: center;
+      padding-top: 15%;
+      color: #444;
+    }
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 1rem;
+    }
+    .buttons {
+      margin-top: 2rem;
+    }
+    button {
+      background-color: #a7f0c4;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1.2rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin: 0 10px;
+    }
+    button:hover {
+      background-color: #7af2a8;
+      transform: scale(1.1);
+    }
+    .no {
+      background-color: #ffd4d4;
+    }
+    .no:hover {
+      background-color: #ff9e9e;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌸 Hey there! Ready to enter Suma’s Cozy Portfolio? 🌸</h1>
+  <div class="buttons">
+    <button onclick="enterSite()">Yes 💚</button>
+    <button class="no" onclick="sayNo()">Maybe later 😅</button>
+  </div>
+  <p id="message"></p>
+
+  <script>
+    function enterSite() {
+      window.location.href = 'index.html';
+    }
+    function sayNo() {
+      const msg = document.getElementById('message');
+      msg.textContent = "Aww okay 😿 come back when you’re ready!";
+    }
+  </script>
+</body>
+</html>
